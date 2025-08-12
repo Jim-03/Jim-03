@@ -1,5 +1,5 @@
 html, body, #root {
-    background-color: black;
+    background: linear-gradient(to bottom right, black, rgb(60, 60, 60));
     min-height: 100vh;
     margin: 0;
     padding: 0;
