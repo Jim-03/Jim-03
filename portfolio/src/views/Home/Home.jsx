@@ -17,6 +17,7 @@ import {
   SiSpringboot
 } from 'react-icons/si';
 import clinic from '../../assets/local-clinic.png';
+import portfolio from '../../assets/portfolio.png';
 
 function Home () {
   return (
@@ -94,6 +95,27 @@ function Home () {
             </p>
             <p onClick={() => {
               window.open('https://github.com/Jim-03/Local-Clinic', '_blank');
+            }}
+            >
+              <span><FaGithub /></span> GitHub repo
+            </p>
+          </div>
+        </div>
+        <div className={styles.project}>
+          <img src={portfolio} alt='Portfolio' />
+          <p className={styles.projectName}>Portfolio</p>
+          <p>A website to showcase my skills to potential recruiters</p>
+          <div className={styles.projectArchitecture}>
+            <p><FaReact color='dodgerblue' /></p>
+          </div>
+          <div className={styles.links}>
+            <p onClick={() => {
+              window.open('https://jims-portfolio.vercel.app');
+            }}
+            ><span><FaExternalLinkAlt /></span> Live demo
+            </p>
+            <p onClick={() => {
+              window.open('https://github.com/Jim-03/Jim-03', '_blank');
             }}
             >
               <span><FaGithub /></span> GitHub repo
