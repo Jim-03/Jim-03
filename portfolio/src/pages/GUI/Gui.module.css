@@ -23,7 +23,7 @@
         flex-direction: column;
     }
 
-    .viewSection {
-        margin: auto;
-    }
+  .viewSection {
+    margin: 60px auto auto;
+  }
 }
