@@ -123,3 +123,19 @@
   padding: 10px;
   flex-grow: 1;
 }
+
+@media (max-width: 768px) {
+  .skill {
+    width: 40%
+  }
+
+  .project {
+    flex: 1;
+    height: 400px;
+  }
+
+  .project img {
+    height: 150px;
+  }
+
+}
