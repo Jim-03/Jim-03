@@ -4,10 +4,10 @@ import { HiDownload } from 'react-icons/hi'
 
 /**
  * Reusable component that displays the sidebar
- * @param buttons Component props containing a list of buttons' details
- * @param buttons.name The name of the button
- * @param buttons.action Function to be called when the button is clicked
- * @param buttons.icon The button's Icon
+ * @param {array} buttons Component props containing a list of buttons' details
+ * @param {string} buttons.name The name of the button
+ * @param {function} buttons.action Function to be called when the button is clicked
+ * @param {svg} buttons.icon The button's Icon
  */
 function Sidebar ({ buttons }) {
   const [activeButton, setActiveButton] = useState('Home')
