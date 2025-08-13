@@ -17,3 +17,13 @@
     border-radius: 10px;
     background-color: #1f1f1f;
 }
+
+@media (max-width: 768px) {
+    .background {
+        flex-direction: column;
+    }
+
+    .viewSection {
+        margin: auto;
+    }
+}

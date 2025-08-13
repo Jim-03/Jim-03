@@ -12,6 +12,10 @@ html, body, #root {
   align-items: center;
 }
 
+.header-container {
+  display: none;
+}
+
 .sidebar-container {
   background-color: #373737;
   border: none;
@@ -22,7 +26,6 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20px;
 }
 
 .sidebar-container hr {
@@ -141,4 +144,28 @@ html, body, #root {
   background-color: white;
   color: black;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: absolute;
+    top: 6%;
+    left: 20px;
+    width: 80%;
+    height: 90%;
+  }
+
+  .header-container {
+    display: block;
+    background-color: #303030;
+    width: 100%;
+    height: 5%;
+    align-content: center;
+    padding-left: 20px;
+  }
+
+  .header-container svg {
+    color: white;
+    font-size: 3rem;
+  }
 }

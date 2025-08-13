@@ -1,5 +1,6 @@
 .background {
   height: auto;
+  width: 100%;
   flex-grow: 1;
   border-radius: inherit;
   color: white;
