@@ -149,20 +149,24 @@ html, body, #root {
 
 @media (max-width: 768px) {
   .sidebar-container {
+    background-color: #00002e;
     position: absolute;
-    top: 6%;
+    top: 60px;
     left: 20px;
     width: 80%;
     height: 90%;
+    margin-left: 0;
   }
 
   .header-container {
     display: block;
     background-color: #303030;
-    width: 100%;
-    height: 5%;
+    width: 90%;
+    height: 50px;
     align-content: center;
     padding-left: 20px;
+    margin-top: 5px;
+    position: fixed;
   }
 
   .header-container svg {
