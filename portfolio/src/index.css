@@ -158,6 +158,10 @@ html, body, #root {
     margin-left: 0;
   }
 
+  .sidebar-profile {
+    height: 40%;
+  }
+
   .header-container {
     display: block;
     background-color: #303030;
