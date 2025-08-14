@@ -27,3 +27,9 @@
     margin: 60px auto auto;
   }
 }
+
+@media (min-width: 769px) {
+  .viewSection {
+    width: 100vh;
+  }
+}
