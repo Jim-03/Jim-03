@@ -24,9 +24,9 @@ function Home () {
     <div className={styles.background}>
       <section className={styles.heroSection}>
         <h1>Hello 👋, I'm Jimmy</h1>
-        <p>A backend focused full-stack developer 🙂</p>
+        <p>A backend focused full-stack developer | Software Engineer 🙂</p>
       </section>
-      <h2>Skills</h2>
+      <h2>Familiar Frameworks and Libraries</h2>
       <section className={styles.skillsSection}>
         <div className={styles.skill}>
           <SiSpringboot color='green' />
@@ -77,7 +77,7 @@ function Home () {
           <p>Docker</p>
         </div>
       </section>
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <section className={styles.projectSection}>
         <div className={styles.project}>
           <img src={clinic} alt='Clinic Management System' />
