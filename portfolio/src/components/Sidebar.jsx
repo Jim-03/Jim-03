@@ -5,11 +5,12 @@ import {HiDownload} from 'react-icons/hi';
  * Reusable component that displays the sidebar
  * @param {array} buttons Component props containing a list of buttons' details
  * @param {string} activeView The name of the button showing the current view
+ * @param {function} showSideBar Function to close the sidebar on small screen devices
  * @param {string} buttons.name The name of the button
  * @param {function} buttons.action Function to be called when the button is clicked
  * @param {svg} buttons.icon The button's Icon
  */
-function Sidebar({buttons, activeView}) {
+function Sidebar({buttons, activeView, showSideBar}) {
 
   return (
     <div className="sidebar-container">
@@ -28,6 +29,7 @@ function Sidebar({buttons, activeView}) {
             className={button.name === activeView ? 'active' : null}
             onClick={() => {
               button.action();
+              if (window.innerWidth < 768) showSideBar()
             }}
           >{button.icon} {button.name}
           </button>)}

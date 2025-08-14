@@ -49,7 +49,7 @@ function Gui () {
             action: () => alert('Feature to be developed soon!'),
             icon: <BsDatabaseGear />
           }
-        ]} activeView={activeView}
+        ]} activeView={activeView} showSideBar={() => setShowSidebar(false)}
         />}
       <section
         className={styles.viewSection} onClick={() => {
