@@ -93,6 +93,10 @@ function Home () {
           </div>
           <div className={styles.links}>
             <p onClick={() => {
+              if (window.innerWidth <= 768) {
+                window.alert("This project can't be viewed on a small screen device 🥲\n");
+                return;
+              }
               window.open('https://jims-local-clinic.vercel.app');
             }}
             ><span><FaExternalLinkAlt /></span> Live demo
