@@ -1,0 +1,195 @@
+.background {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.project {
+  width: 45%;
+  height: 400px;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  transition: 300ms;
+  background-color: #373737;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project:hover {
+  background-color: #717171;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.projectDetailsBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.projectFormBackground {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #373737;
+  color: white;
+  animation: slideIn 500ms ease-in forwards;
+  display: flex;
+}
+
+.closeButton p {
+  position: fixed;
+  top: -100px;
+  right: -10px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background-color: #373737;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton p:hover {
+  background-color: #4e4e4e;
+}
+
+.projectForm {
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: inherit;
+}
+
+.descriptionDiv, .stackDiv {
+  padding: 10px;
+  flex: 1;
+}
+
+.projectForm img {
+  width: 100%;
+}
+
+.techStack, .projectLinks, .languageStack {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  background-color: #1f1f1f;
+  padding: 10px;
+}
+
+.techStack p, .projectLinks p, .languageStack p {
+  background-color: black;
+  flex: 1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  font-size: 1.2rem;
+  border-left: 3px solid orange;
+  border-radius: 5px;
+  transition: 200ms;
+}
+
+.techStack p svg, .projectLinks p svg, .languageStack p svg {
+  font-size: 2rem;
+}
+
+.techStack p:hover, .projectLinks p:hover, .languageStack p:hover {
+  background-color: #535353;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.descriptionDiv {
+  background-color: #1f1f1f;
+  border-radius: inherit;
+}
+
+.descriptionDiv h1 {
+  border-bottom: 3px solid orange;
+  text-align: center;
+}
+
+.descriptionDiv p, .descriptionDiv ol, .descriptionDiv ul {
+  background-color: #373737;
+  padding: 10px 30px;
+}
+
+@media (max-width: 768px) {
+  .background {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .project {
+    width: 80%;
+    height: 200px;
+  }
+
+  .projectFormBackground {
+    top: 45%;
+    height: 80vh;
+  }
+
+  .projectForm {
+    width: 90%;
+  }
+
+  .closeButton p {
+    font-weight: normal;
+    font-size: 3rem;
+    right: 0;
+    top: -75px;
+  }
+
+  .techStack {
+    flex-wrap: wrap;
+  }
+
+  .techStack p, .projectLinks p, .languageStack p {
+    padding: 5px;
+    font-size: 1rem;
+    height: 35px;
+  }
+
+  .projectDetails {
+    flex-direction: column;
+  }
+
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
