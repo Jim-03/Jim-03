@@ -2,7 +2,7 @@ import styles from './Home.module.css';
 import {
   FaDocker,
   FaExternalLinkAlt,
-  FaGithub,
+  FaGithub, FaJava,
   FaNodeJs,
   FaReact
 } from 'react-icons/fa';
@@ -31,6 +31,10 @@ function Home () {
         <div className={styles.skill}>
           <SiSpringboot color='green' />
           <p>Spring Boot</p>
+        </div>
+        <div className={styles.skill}>
+          <FaJava color='orange' />
+          <p>JavaFX</p>
         </div>
         <div className={styles.skill}>
           <FaNodeJs color='green' />
