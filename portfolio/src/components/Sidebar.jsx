@@ -1,16 +1,15 @@
-import { FaUser } from 'react-icons/fa'
-import { useState } from 'react'
-import { HiDownload } from 'react-icons/hi'
+import {FaUser} from 'react-icons/fa';
+import {HiDownload} from 'react-icons/hi';
 
 /**
  * Reusable component that displays the sidebar
  * @param {array} buttons Component props containing a list of buttons' details
+ * @param {string} activeView The name of the button showing the current view
  * @param {string} buttons.name The name of the button
  * @param {function} buttons.action Function to be called when the button is clicked
  * @param {svg} buttons.icon The button's Icon
  */
-function Sidebar ({ buttons }) {
-  const [activeButton, setActiveButton] = useState('Home')
+function Sidebar({buttons, activeView}) {
 
   return (
     <div className="sidebar-container">
@@ -26,10 +25,9 @@ function Sidebar ({ buttons }) {
         {buttons.map((button, key) =>
           <button
             key={key}
-            className={button.name === activeButton ? 'active' : null}
+            className={button.name === activeView ? 'active' : null}
             onClick={() => {
-              setActiveButton(button.name)
-              button.action()
+              button.action();
             }}
           >{button.icon} {button.name}
           </button>)}
@@ -39,7 +37,7 @@ function Sidebar ({ buttons }) {
         <HiDownload/> Curriculum Vitae
       </button>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

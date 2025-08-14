@@ -6,11 +6,13 @@ import { TbFileCertificate } from 'react-icons/tb';
 import { useEffect, useState } from 'react';
 import Home from '../../views/Home/Home.jsx';
 import Header from '../../components/Header.jsx';
+import About from '../../views/About/About.jsx';
 
 function Gui () {
   const [view, setView] = useState(<Home />);
   const [showSidebar, setShowSidebar] = useState(true);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [activeView, setActiveView] = useState('Home');
 
   useEffect(() => {
     function changeOnResize () {
@@ -31,10 +33,10 @@ function Gui () {
       <Header openSide={() => setShowSidebar(prev => !prev)} />
       {showSidebar &&
         <Sidebar buttons={[
-          { name: 'Home', action: () => setView(<Home />), icon: <FaHome /> },
+          { name: 'Home', action: () => {setView(<Home />); setActiveView('Home')}, icon: <FaHome /> },
           {
             name: 'About',
-            action: () => alert('Feature to be developed soon!'),
+            action: () => {setView(<About/>); setActiveView('About')},
             icon: <FaUser />
           },
           {
@@ -47,7 +49,7 @@ function Gui () {
             action: () => alert('Feature to be developed soon!'),
             icon: <BsDatabaseGear />
           }
-        ]}
+        ]} activeView={activeView}
         />}
       <section
         className={styles.viewSection} onClick={() => {
