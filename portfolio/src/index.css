@@ -156,6 +156,7 @@ html, body, #root {
     width: 80%;
     height: 90%;
     margin-left: 0;
+    animation: fadeIn 200ms;
   }
 
   .sidebar-profile {
@@ -176,5 +177,20 @@ html, body, #root {
   .header-container svg {
     color: white;
     font-size: 3rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    left: -75%;
+  }
+  25% {
+    left: -50%;
+  }
+  50% {
+    left: -25%;
+  }
+  100% {
+    left: 0;
   }
 }
