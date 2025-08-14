@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import Home from '../../views/Home/Home.jsx';
 import Header from '../../components/Header.jsx';
 import About from '../../views/About/About.jsx';
+import Project from '../../views/Project/Project.jsx';
 
 function Gui () {
   const [view, setView] = useState(<Home />);
@@ -32,24 +33,25 @@ function Gui () {
     <div className={styles.background}>
       <Header openSide={() => setShowSidebar(prev => !prev)} />
       {showSidebar &&
-        <Sidebar buttons={[
-          { name: 'Home', action: () => {setView(<Home />); setActiveView('Home')}, icon: <FaHome /> },
-          {
-            name: 'About',
-            action: () => {setView(<About/>); setActiveView('About')},
-            icon: <FaUser />
-          },
-          {
-            name: 'Achievements',
-            action: () => alert('Feature to be developed soon!'),
-            icon: <TbFileCertificate />
-          },
-          {
-            name: 'Projects',
-            action: () => alert('Feature to be developed soon!'),
-            icon: <BsDatabaseGear />
-          }
-        ]} activeView={activeView} showSideBar={() => setShowSidebar(false)}
+        <Sidebar
+          buttons={[
+            { name: 'Home', action: () => { setView(<Home />); setActiveView('Home'); }, icon: <FaHome /> },
+            {
+              name: 'About',
+              action: () => { setView(<About />); setActiveView('About'); },
+              icon: <FaUser />
+            },
+            {
+              name: 'Achievements',
+              action: () => alert('Feature to be developed soon!'),
+              icon: <TbFileCertificate />
+            },
+            {
+              name: 'Projects',
+              action: () => { setView(<Project />); setActiveView('Projects'); },
+              icon: <BsDatabaseGear />
+            }
+          ]} activeView={activeView} showSideBar={() => setShowSidebar(false)}
         />}
       <section
         className={styles.viewSection} onClick={() => {
