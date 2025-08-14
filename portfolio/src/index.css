@@ -152,7 +152,7 @@ html, body, #root {
     background-color: #00002e;
     position: absolute;
     top: 60px;
-    left: 20px;
+    left: 0;
     width: 80%;
     height: 90%;
     margin-left: 0;
