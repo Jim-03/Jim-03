@@ -1,0 +1,65 @@
+.background {
+  width: auto;
+  flex-grow: 1;
+  border-radius: inherit;
+  color: white;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.descriptionDiv {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  width: 70%;
+}
+
+.descriptionDiv h1, .descriptionDiv h2 {
+  border-bottom: 3px solid navy;
+}
+
+.descriptionDiv h3 {
+  background-color: rgba(48, 48, 48, 0.5);
+  padding-left: 20px;
+  align-content: center;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.skillSection {
+  background-color: #373737;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.skillList li {
+  background-color: #303030;
+  min-height: 50px;
+  margin: 5px auto;
+  font-size: 1.2rem;
+  align-content: center;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .skillList {
+    align-content: center;
+  }
+
+  .descriptionDiv ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skillList li {
+    border-left: 2px solid orange;
+    border-radius: 5px;
+  }
+}
+
