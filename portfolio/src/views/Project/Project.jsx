@@ -92,10 +92,10 @@ function Project () {
               'GUI',
               'Home view',
               'Projects view',
-              'About view'
+              'About view',
+              'Achievement view'
             ],
             futureFeatures: [
-              'Achievement view',
               'CLI'
             ],
             techStack: [
