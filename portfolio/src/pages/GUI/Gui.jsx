@@ -8,6 +8,7 @@ import Home from '../../views/Home/Home.jsx';
 import Header from '../../components/Header.jsx';
 import About from '../../views/About/About.jsx';
 import Project from '../../views/Project/Project.jsx';
+import Achievement from '../../views/Achievemnt/Achievement.jsx';
 
 function Gui () {
   const [view, setView] = useState(<Home />);
@@ -43,7 +44,7 @@ function Gui () {
             },
             {
               name: 'Achievements',
-              action: () => alert('Feature to be developed soon!'),
+              action: () => {setView(<Achievement/>); setActiveView("Achievements");},
               icon: <TbFileCertificate />
             },
             {
@@ -53,14 +54,14 @@ function Gui () {
             }
           ]} activeView={activeView} showSideBar={() => setShowSidebar(false)}
         />}
-      <section
+      <div
         className={styles.viewSection} onClick={() => {
           if (windowSize < 768) {
             setShowSidebar(false);
           }
         }}
       >{view}
-      </section>
+      </div>
     </div>
   );
 }
