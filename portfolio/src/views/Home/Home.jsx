@@ -14,7 +14,7 @@ import {
   SiMysql,
   SiPostgresql,
   SiRasa,
-  SiSpringboot
+  SiSpringboot, SiSqlite
 } from 'react-icons/si';
 import clinic from '../../assets/local-clinic.png';
 import portfolio from '../../assets/portfolio.png';
@@ -63,6 +63,10 @@ function Home () {
         <div className={styles.skill}>
           <SiPostgresql color='navy' />
           <p>PostgreSQL</p>
+        </div>
+        <div className={styles.skill}>
+          <SiSqlite color="blue"/>
+          <p>SQLite</p>
         </div>
         <div className={styles.skill}>
           <SiRasa color='purple' />
