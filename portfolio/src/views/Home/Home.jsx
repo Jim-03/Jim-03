@@ -33,10 +33,6 @@ function Home () {
           <p>Spring Boot</p>
         </div>
         <div className={styles.skill}>
-          <FaJava color='orange' />
-          <p>JavaFX</p>
-        </div>
-        <div className={styles.skill}>
           <FaNodeJs color='green' />
           <p>Node.js</p>
         </div>
@@ -45,20 +41,16 @@ function Home () {
           <p>Express</p>
         </div>
         <div className={styles.skill}>
-          <FaReact color='dodgerblue' />
-          <p>React</p>
-        </div>
-        <div className={styles.skill}>
-          <SiMysql color='navy' />
-          <p>MySQL</p>
-        </div>
-        <div className={styles.skill}>
           <SiFlask color='red' />
           <p>Flask</p>
         </div>
         <div className={styles.skill}>
           <SiFastapi color='darkgreen' />
           <p>FastApi</p>
+        </div>
+        <div className={styles.skill}>
+          <SiMysql color='navy' />
+          <p>MySQL</p>
         </div>
         <div className={styles.skill}>
           <SiPostgresql color='navy' />
@@ -73,8 +65,16 @@ function Home () {
           <p>Rasa</p>
         </div>
         <div className={styles.skill}>
+          <FaReact color='dodgerblue' />
+          <p>React</p>
+        </div>
+        <div className={styles.skill}>
           <SiFlutter color='dodgerblue' />
           <p>Flutter</p>
+        </div>
+        <div className={styles.skill}>
+          <FaJava color='orange' />
+          <p>JavaFX</p>
         </div>
         <div className={styles.skill}>
           <FaDocker color='dodgerblue' />
