@@ -72,7 +72,7 @@ ___
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Jim-03&show_icons=true&theme=radical" alt="Jim-03's GitHub Stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jim-03&layout=compact&theme=radical&hide=html,c" alt="YOUR-USERNAME's Top Languages">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jim-03&layout=compact&theme=radical&hide=html,c" alt="Jim-03's Top Languages">
 </p>
 
 ___
