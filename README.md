@@ -2,7 +2,7 @@
 
 **Backend-Focused Software Developer**
 
-[Email](mailto:chemuku.jimmy@gmail.com) · [GitHub](https://github.com/jimmychemuku)
+[Email](mailto:chemuku.jimmy@gmail.com) · [GitHub](https://github.com/Jim-03) · [LinkedIn](https://linkedin.com/in/jimmy-chemuku)
 
 > _"Building reliable, well-architected backend systems for Kenya's fintech and enterprise landscape."_
 
